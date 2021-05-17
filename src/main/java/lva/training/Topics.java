@@ -5,6 +5,8 @@ import javax.persistence.*;
 @Entity
 @Table(name = "topics")
 
+// Adding some comments
+
 public class Topics {
 
     @Id
