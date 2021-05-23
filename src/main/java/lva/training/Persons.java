@@ -23,10 +23,10 @@ public class Persons {
     @JoinColumn(name = "teamId")
     private Teams teams;
 
-    @OneToMany(mappedBy ="trainerId")
+    @OneToMany(mappedBy ="modules")
     private Modules modules;
 
-    @OneToMany(mappedBy ="studentId")
+    @OneToMany(mappedBy ="attendances")
     private Attendances attendances;
 
     public Persons() {

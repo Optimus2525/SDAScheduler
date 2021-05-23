@@ -31,10 +31,10 @@ public class Modules {
     private Classrooms classrooms;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "personId")
+    @JoinColumn(name = "trainerId")
     private Persons persons;
 
-    @OneToMany(mappedBy ="moduleId")
+    @OneToMany(mappedBy ="attendances")
     private Attendances attendances;
 
     public Modules() {

@@ -13,7 +13,7 @@ public class Classrooms {
     private String name;
     private String address;
 
-    @OneToMany(mappedBy ="classroomId")
+    @OneToMany(mappedBy ="classroom")
     private Modules modules;
 
     public Classrooms() {

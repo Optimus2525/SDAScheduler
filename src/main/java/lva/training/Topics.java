@@ -14,7 +14,7 @@ public class Topics {
     private Integer topicId;
     private String name;
 
-    @OneToMany(mappedBy ="topicId")
+    @OneToMany(mappedBy = "topic")
     private Modules modules;
 
     public Topics() {

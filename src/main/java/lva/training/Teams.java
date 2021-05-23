@@ -18,7 +18,7 @@ public class Teams {
     @OneToMany(mappedBy ="teamId")
     private Modules modules;
 
-    @OneToMany(mappedBy ="personId")
+    @OneToMany(mappedBy ="team")
     private Persons persons;
 
     public Teams(Integer teamId, String name) {
